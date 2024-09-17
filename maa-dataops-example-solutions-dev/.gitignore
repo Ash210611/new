@@ -1,0 +1,10 @@
+.DS_Store
+
+# IDE
+.idea/
+target/
+*.iml
+.vscode
+/env.list
+
+/data_ops_blueprints_example/tests/resources/liquibase.properties

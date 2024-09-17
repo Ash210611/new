@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "aae-gov-marketing-ddl"
+version = "0.1.0"
+description = ""
+authors = ["jenkins <jenkins@evernorth.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.7.1,<4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

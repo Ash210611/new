@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog logicalFilePath="db.changelog-master.xml" xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
+
+    <include file="tables/cdo_mbr_enrlmt_cvrg.sql" relativeToChangelogFile="true"/>
+    <include file="tables/sfdc_lead.sql" relativeToChangelogFile="true"/>
+    <include file="tables/sfdc_vlocity_ins__application__c.sql" relativeToChangelogFile="true"/>
+    <include file="tables/sfdc_campaign.sql" relativeToChangelogFile="true"/>
+    <include file="tables/sfdc_contact.sql" relativeToChangelogFile="true"/>
+    <include file="tables/sfdc_cti_inbound_call_log__c.sql" relativeToChangelogFile="true"/>
+    <include file="tables/sfdc_cti_non_lead_call__c.sql" relativeToChangelogFile="true"/>
+    <include file="tables/sfdc_do_not_contact__c.sql" relativeToChangelogFile="true"/>
+    <include file="tables/sfdc_task.sql" relativeToChangelogFile="true"/>
+    <include file="tables/sfdc_user.sql" relativeToChangelogFile="true"/>
+    <include file="tables/sfdc_geographic_and_territory_matrix__c.sql" relativeToChangelogFile="true"/>
+    <include file="tables/sfdc_product2.sql" relativeToChangelogFile="true"/>
+    <include file="tables/sfdc_parent_campaign__c.sql" relativeToChangelogFile="true"/>
+    <include file="tables/sfdc_campaign_request_detail__c.sql" relativeToChangelogFile="true"/>
+    <include file="tables/mail_src_ddl.sql" relativeToChangelogFile="true"/> 
+    <include file="tables/mail_src_updt.sql" relativeToChangelogFile="true"/> 
+    <include file="tables/leads_matches.sql" relativeToChangelogFile="true"/> 
+    <include file="tables/apps_matches.sql" relativeToChangelogFile="true"/> 
+    <include file="tables/adobe.sql" relativeToChangelogFile="true"/> 
+    <include file="tables/verizon.sql" relativeToChangelogFile="true"/> 
+    <include file="tables/adhoc_tracker.sql" relativeToChangelogFile="true"/> 
+    <include file="tables/adhoc_sql_audit.sql" relativeToChangelogFile="true"/>
+</databaseChangeLog>

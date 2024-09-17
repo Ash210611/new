@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "data_ops_blueprints_tdv_dml"
+version = "0.1.0"
+description = ""
+authors = ["Zachary Hinds <Zachary.Hinds@evernorth.com>"]
+packages = [{include = "tests"}]
+
+[tool.poetry.dependencies]
+python = ">=3.7.1,<4.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[data-ops-config]
+type = "dml_with_dag"

@@ -1,0 +1,95 @@
+databaseChangeLog:
+
+  -  changeSet:
+       id:  '1'
+       author:  nvoxland
+       changes:
+         - tagDatabase:
+             tag: test1
+         -  createTable:
+              tableName:  person1
+              columns:
+                -  column:
+                     name:  id
+                     type:  int
+                     autoIncrement:  true
+                     constraints:
+                       primaryKey:  true
+                       nullable:  false
+                -  column:
+                     name:  firstname
+                     type:  varchar(50)
+                -  column:
+                     name:  lastname
+                     type:  varchar(50)
+                     constraints:
+                       nullable:  false
+                -  column:
+                     name:  state
+                     type:  char(2)
+  -  changeSet:
+       id:  '2'
+       author:  nvoxland
+       changes:
+         - tagDatabase:
+             tag: test2
+         -  createTable:
+              tableName:  person2
+              columns:
+                -  column:
+                     name:  id
+                     type:  int
+                     autoIncrement:  true
+                     constraints:
+                       primaryKey:  true
+                       nullable:  false
+                -  column:
+                     name:  firstname
+                     type:  varchar(50)
+                -  column:
+                     name:  lastname
+                     type:  varchar(50)
+                     constraints:
+                       nullable:  false
+                -  column:
+                     name:  state
+                     type:  char(2)
+
+  -  changeSet:
+       id:  '3'
+       author:  nvoxland
+       changes:
+         - tagDatabase:
+             tag: test3
+         -  createTable:
+              tableName:  person3
+              columns:
+                -  column:
+                     name:  id
+                     type:  int
+                     autoIncrement:  true
+                     constraints:
+                       primaryKey:  true
+                       nullable:  false
+                -  column:
+                     name:  firstname
+                     type:  varchar(50)
+                -  column:
+                     name:  lastname
+                     type:  varchar(50)
+                     constraints:
+                       nullable:  false
+                -  column:
+                     name:  state
+                     type:  char(2)
+
+  -  changeSet:
+       id:  '4'
+       author:  jacklai
+       changes:
+         - tagDatabase:
+             tag: test4
+         - renameColumn:
+             newColumnName: region
+             oldColumnName: state
+             tableName: person3
